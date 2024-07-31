@@ -23,14 +23,23 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:react-hooks/recommended',
   ],
-  plugins: ['prettier', '@typescript-eslint', 'react', 'react-hooks'],
+  plugins: [
+    'prettier',
+    '@typescript-eslint',
+    'react',
+    'react-hooks',
+    'unused-imports',
+    'import',
+  ],
   rules: {
     // JavaScript rules
+    'no-console': 'warn',
     'prefer-const': 'warn',
     'no-var': 'warn',
     'no-unused-vars': 'warn',
     'object-shorthand': 'warn',
     'quote-props': ['warn', 'as-needed'],
+    'object-curly-spacing': ['error', 'never'],
     // TypeScript rules
     '@typescript-eslint/array-type': [
       'warn',
