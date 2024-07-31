@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# README
 
-## Getting Started
+## Portfolio
 
-First, run the development server:
+### Introduction
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Hello! I'm **Mwanya Christian**, a fullstack developer based in Kinshasa. This portfolio showcases my work, skills, and projects. I specialize in building modern web applications using cutting-edge technologies. Below you'll find details about the stack and tools I use.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### Frontend
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Next.js**: A React framework that enables server-side rendering and static site generation, providing a seamless developer experience.
+- **TypeScript**: A superset of JavaScript that adds static typing, improving code quality and maintainability.
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom user interfaces.
+- **ESLint & Prettier**: Tools for maintaining code quality and consistency. ESLint is used for linting, while Prettier is employed for code formatting.
+- **Husky**: A tool for managing Git hooks, ensuring code quality checks are run before commits.
 
-## Learn More
+#### Backend
 
-To learn more about Next.js, take a look at the following resources:
+- **Supabase**: An open-source backend as a service (BaaS) that provides a real-time database, authentication, and storage solutions. It's built on top of PostgreSQL.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Additional Tools and Technologies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This section lists other tools and technologies I use in my projects:
 
-## Deploy on Vercel
+- **Docker**: For containerizing applications, ensuring consistency across development and production environments.
+- **Git & GitHub**: For version control and project management.
+- **Jest**: A testing framework for JavaScript, ensuring that code is reliable and maintainable.
+- **Figma**: For designing UI/UX mockups and prototypes.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Installation and Setup
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To run the portfolio locally, follow these steps:
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone <repository-url>
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+
+3. **Set up environment variables:**
+Create a .env.local file in the root directory and add the necessary environment variables.
+
+4. **Start the development server:**
+
+   ```bash
+   npm run dev
+
+----
+Thank you for visiting my portfolio! If you'd like to get in touch, feel free to reach out via [email](mailto:cmwanya@gmail.com) or [phone](tel:+243906920283).
