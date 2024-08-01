@@ -3,8 +3,9 @@ import { ModeToggle } from '@/components/mode-toggle';
 
 const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="">
       <Header>
+        <div>Logo</div>
         <ModeToggle />
       </Header>
       hello
