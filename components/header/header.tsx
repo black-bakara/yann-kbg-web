@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderProps } from './header.type';
+import { HeaderProps } from './type';
 
 const Header = ({ children }: HeaderProps) => {
   return (
