@@ -35,11 +35,11 @@ export default function RootLayout({
           <main className="container lg:px-96">
             <div>
               <div className="min-sm:h-20 size-full h-48 bg-black bg-[url('/assets/images/fordT.jpg')] bg-cover bg-center bg-no-repeat max-md:h-20" />
-              <div className="flex justify-between p-5">
+              <div className="flex justify-between p-5 max-sm:px-0">
                 <Avatar
                   imageUrl={MyAvatar}
                   altText="Avatar Christian"
-                  className="z-50 -mt-20 h-44 w-44 rounded-full border-4 border-[color] max-sm:-mt-10 max-sm:h-24 max-sm:w-24"
+                  className="z-50 -mt-20 h-44 w-44 rounded-full border-4 border-[color] max-sm:-mt-9 max-sm:h-36 max-sm:w-36"
                 />
                 <Button className="rounded-3xl bg-main text-sky-50 hover:bg-cyan-600">
                   {' '}
