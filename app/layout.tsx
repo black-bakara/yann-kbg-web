@@ -10,6 +10,7 @@ import React from 'react';
 import Avatar from '@/components/avatar/avatar';
 import TitleH1 from '@/components/ui/title-h1';
 import { Avatar as AvatarIcon, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
 
 export default function RootLayout({
   children,
@@ -34,12 +35,16 @@ export default function RootLayout({
           <main className="container lg:px-96">
             <div>
               <div className="min-sm:h-20 size-full h-48 bg-black bg-[url('/assets/images/fordT.jpg')] bg-cover bg-center bg-no-repeat max-md:h-20" />
-              <div className="px-5">
+              <div className="flex justify-between p-5">
                 <Avatar
                   imageUrl={MyAvatar}
                   altText="Avatar Christian"
                   className="z-50 -mt-20 h-44 w-44 rounded-full border-4 border-[color] max-sm:-mt-10 max-sm:h-24 max-sm:w-24"
                 />
+                <Button className="rounded-3xl bg-main text-sky-50 hover:bg-cyan-600">
+                  {' '}
+                  Follow
+                </Button>
               </div>
               <div className="mt-3">
                 <TitleH1>
@@ -51,7 +56,7 @@ export default function RootLayout({
                   </div>
                 </TitleH1>
                 <div className="my-2">
-                  <p>
+                  <p className="mb-3 text-sm">
                     Not just sharing knowledge and solution but share{' '}
                     <strong className="font-semibold text-main">passion</strong>
                   </p>
@@ -69,6 +74,23 @@ export default function RootLayout({
                       kadea academy
                     </a>
                   </p>
+
+                  <ul className="my-4 flex items-center gap-6">
+                    <li>Available</li>
+                    <li>
+                      {' '}
+                      <a
+                        href="https://www.kadea.academy/"
+                        rel="noopener noreferrer"
+                        className="font-normal text-main"
+                        target="_blank"
+                      >
+                        /links
+                      </a>
+                    </li>
+                    <li>Dec 13th</li>
+                    <li>Since 2019</li>
+                  </ul>
                 </div>
               </div>
             </div>
