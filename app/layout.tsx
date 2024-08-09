@@ -10,8 +10,8 @@ import React from 'react';
 import Avatar from '@/components/avatar/avatar';
 import TitleH1 from '@/components/ui/title-h1';
 import { Avatar as AvatarIcon, AvatarImage } from '@/components/ui/avatar';
-import { Button } from '@/components/ui/button';
 import { Link } from '@/components/ui/link';
+import { CustomButtonLink } from '@/components/custom-button/custom-button';
 
 export default function RootLayout({
   children,
@@ -42,10 +42,8 @@ export default function RootLayout({
                   altText="Avatar Christian"
                   className="z-50 -mt-20 h-44 w-44 rounded-full border-4 border-foreground max-sm:-mt-9 max-sm:h-36 max-sm:w-36"
                 />
-                <Button className="rounded-3xl bg-main text-sky-50 hover:bg-cyan-600">
-                  {' '}
-                  Follow
-                </Button>
+
+                <CustomButtonLink href="#">Follow</CustomButtonLink>
               </div>
               <div className="mt-3">
                 <TitleH1>
