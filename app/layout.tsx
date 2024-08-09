@@ -39,7 +39,7 @@ export default function RootLayout({
                 <Avatar
                   imageUrl={MyAvatar}
                   altText="Avatar Christian"
-                  className="z-50 -mt-20 h-44 w-44 rounded-full border-4 border-[color] max-sm:-mt-9 max-sm:h-36 max-sm:w-36"
+                  className="z-50 -mt-20 h-44 w-44 rounded-full border-4 border-foreground max-sm:-mt-9 max-sm:h-36 max-sm:w-36"
                 />
                 <Button className="rounded-3xl bg-main text-sky-50 hover:bg-cyan-600">
                   {' '}
