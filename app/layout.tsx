@@ -12,6 +12,7 @@ import TitleH1 from '@/components/ui/title-h1';
 import { Avatar as AvatarIcon, AvatarImage } from '@/components/ui/avatar';
 import { Link } from '@/components/ui/link';
 import { CustomButtonLink } from '@/components/custom-button/custom-button';
+import ListItemIcon from '@/components/list-item-icon/list-item-icon';
 
 export default function RootLayout({
   children,
@@ -72,17 +73,25 @@ export default function RootLayout({
                     </Link>
                   </p>
 
-                  <ul className="my-4 flex items-center gap-6">
-                    <li>Available</li>
-                    <li>
-                      {' '}
+                  <div className="my-4 flex items-center gap-6">
+                    <ListItemIcon iconClassName="icon-[ic--round-home-work]">
+                      Available
+                    </ListItemIcon>
+                    <ListItemIcon iconClassName="icon-[ph--link-bold]">
                       <Link href="https://www.kadea.academy/" target="_blank">
                         /links
                       </Link>
-                    </li>
-                    <li>Dec 13th</li>
-                    <li>Since 2019</li>
-                  </ul>
+                    </ListItemIcon>
+                    <ListItemIcon iconClassName="icon-[jam--birthday-cake]">
+                      Dec 13th
+                    </ListItemIcon>
+                    <ListItemIcon iconClassName="icon-[majesticons--calendar]">
+                      Since 2021
+                    </ListItemIcon>
+                    <ListItemIcon iconClassName="icon-[ic--baseline-place]">
+                      Kinshasa, DRC
+                    </ListItemIcon>
+                  </div>
                 </div>
               </div>
             </div>
