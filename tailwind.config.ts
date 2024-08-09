@@ -74,6 +74,13 @@ const config = {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
+      backgroundSize: {
+        auto: 'auto',
+        cover: 'cover',
+        contain: 'contain',
+        30: '30%',
+        50: '50%',
+      },
     },
   },
   plugins: [require('tailwindcss-animate'), addDynamicIconSelectors()],
