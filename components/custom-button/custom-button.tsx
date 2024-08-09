@@ -6,7 +6,9 @@ import Link from 'next/link';
 export const CustomButtonLink = ({ children, href }: CustomButtonLinkProps) => {
   return (
     <CustomButton>
-      <Link href={href}>{children}</Link>
+      <Link href={href} className="flex items-center gap-2">
+        {children}
+      </Link>
     </CustomButton>
   );
 };

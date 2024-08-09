@@ -37,6 +37,8 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@iconify/json": "^2.2.235",
+    "@iconify/tailwind": "^1.1.2",
     "@testing-library/jest-dom": "^6.4.8",
     "@testing-library/react": "^16.0.0",
     "@types/node": "^20",

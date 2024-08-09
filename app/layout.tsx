@@ -43,7 +43,10 @@ export default function RootLayout({
                   className="z-50 -mt-20 h-44 w-44 rounded-full border-4 border-foreground max-sm:-mt-9 max-sm:h-36 max-sm:w-36"
                 />
 
-                <CustomButtonLink href="#">Follow</CustomButtonLink>
+                <CustomButtonLink href="#">
+                  <p> Follow</p>
+                  <span className="icon-[pajamas--linkedin] text-xl" />
+                </CustomButtonLink>
               </div>
               <div className="mt-3">
                 <TitleH1>
