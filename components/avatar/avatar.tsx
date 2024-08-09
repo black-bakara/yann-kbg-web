@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Avatar = ({ imageUrl, className, altText }: AvatarProps) => {
   return (
-    <div className={` ${className}`}>
+    <div className={`z-0 ${className}`}>
       <Image
         src={imageUrl ?? ''}
         className="h-full w-full rounded-full object-cover"
