@@ -2,10 +2,10 @@ import React from 'react';
 import { LinkIconProps } from './index';
 import Link from 'next/link';
 
-const LinkIcon = ({ href, iconClassName }: LinkIconProps) => {
+const LinkIcon = ({ href, iconClassName, className }: LinkIconProps) => {
   return (
     <Link
-      className={`border-b-2 border-background hover:border-main`}
+      className={`border-b-4 border-background hover:border-main ${className}`}
       href={href}
       target="_blank"
     >

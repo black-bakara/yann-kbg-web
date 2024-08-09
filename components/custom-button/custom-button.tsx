@@ -3,10 +3,14 @@ import { CustomButtonProps, CustomButtonLinkProps } from './type';
 import { Button } from '../ui/button';
 import Link from 'next/link';
 
-export const CustomButtonLink = ({ children, href }: CustomButtonLinkProps) => {
+export const CustomButtonLink = ({
+  children,
+  href,
+  target,
+}: CustomButtonLinkProps) => {
   return (
     <CustomButton>
-      <Link href={href} className="flex items-center gap-2">
+      <Link href={href} target={target} className="flex items-center gap-2">
         {children}
       </Link>
     </CustomButton>

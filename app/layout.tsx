@@ -54,7 +54,10 @@ export default function RootLayout({
                     altText="Avatar Christian"
                     className="z-50 -mt-20 h-44 w-44 rounded-full border-4 border-foreground max-sm:-mt-9 max-sm:h-36 max-sm:w-36"
                   />
-                  <CustomButtonLink href="#">
+                  <CustomButtonLink
+                    href="https://www.linkedin.com/in/christianmwanya/"
+                    target="_blank"
+                  >
                     <p> Follow</p>
                     <span className="icon-[pajamas--linkedin] text-xl" />
                   </CustomButtonLink>
@@ -63,7 +66,12 @@ export default function RootLayout({
                   <TitleH1>
                     <div className="flex">
                       Chris Mwanya{' '}
-                      <AvatarIcon className="ml-5 bg-main">
+                      <LinkIcon
+                        href="https://github.com/ChrisMwanya"
+                        iconClassName="icon-[bi--github] text-2xl"
+                        className="mx-5"
+                      />
+                      <AvatarIcon className="bg-main">
                         <AvatarImage src="/assets/images/ford-model-t.png" />
                       </AvatarIcon>
                     </div>
