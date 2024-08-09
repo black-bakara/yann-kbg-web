@@ -11,6 +11,7 @@ import Avatar from '@/components/avatar/avatar';
 import TitleH1 from '@/components/ui/title-h1';
 import { Avatar as AvatarIcon, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
+import { Link } from '@/components/ui/link';
 
 export default function RootLayout({
   children,
@@ -65,28 +66,18 @@ export default function RootLayout({
                     Fullstack Developer. Trainer. Human. Love sharing knowledge{' '}
                     <br />
                     Actually developer trainer at{' '}
-                    <a
-                      rel="noopener noreferrer"
-                      href="https://www.kadea.academy/"
-                      className="text-main"
-                      target="_blank"
-                    >
+                    <Link href="https://www.kadea.academy/" target="_blank">
                       kadea academy
-                    </a>
+                    </Link>
                   </p>
 
                   <ul className="my-4 flex items-center gap-6">
                     <li>Available</li>
                     <li>
                       {' '}
-                      <a
-                        href="https://www.kadea.academy/"
-                        rel="noopener noreferrer"
-                        className="font-normal text-main"
-                        target="_blank"
-                      >
+                      <Link href="https://www.kadea.academy/" target="_blank">
                         /links
-                      </a>
+                      </Link>
                     </li>
                     <li>Dec 13th</li>
                     <li>Since 2019</li>
