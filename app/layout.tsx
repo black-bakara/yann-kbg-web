@@ -27,7 +27,7 @@ export default function RootLayout({
       >
         <body className="max-sm:bg-40 relative bg-opacity-50 bg-[url('../public/assets/logo-black.svg')] bg-30 bg-fixed bg-right-bottom bg-no-repeat">
           <div className="absolute inset-0 bg-background opacity-90" />
-          <div className="relative z-10">
+          <div className="relative z-0">
             <Header>
               <Logo
                 color={{ primary: '', secondary: '' }}
@@ -53,7 +53,7 @@ export default function RootLayout({
                   <Avatar
                     imageUrl={MyAvatar}
                     altText="Avatar Christian"
-                    className="z-50 -mt-20 h-44 w-44 rounded-full border-4 border-foreground max-sm:-mt-9 max-sm:h-36 max-sm:w-36"
+                    className="mt-20 h-44 w-44 rounded-full border-4 border-foreground max-sm:-mt-9 max-sm:h-36 max-sm:w-36"
                   />
                   <CustomButtonLink
                     href="https://www.linkedin.com/in/christianmwanya/"
