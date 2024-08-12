@@ -5,11 +5,11 @@ import MenuItem from './menu-item/menu-item';
 export const Navbar: React.FC<NavbarProps> = ({ className, menuItems }) => {
   return (
     <nav>
-      <ul className={`flex justify-between gap-0 ${className}`}>
+      <div className={`flex justify-between gap-0 ${className}`}>
         {menuItems.map((item) => (
           <MenuItem key={item.title} href={item.href} title={item.title} />
         ))}
-      </ul>
+      </div>
     </nav>
   );
 };
