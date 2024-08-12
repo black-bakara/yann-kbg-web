@@ -13,6 +13,8 @@ import { CustomButtonLink } from '@/components/custom-button/custom-button';
 import ListItemIcon from '@/components/list-item-icon/list-item-icon';
 import LinkIcon from '@/components/icon-link/link-icon';
 import Stacks from '@/components/stacks/stacks';
+import { Navbar } from '@/components/navbar/navbar';
+import { menuItems } from '@/config/menu';
 
 export default function RootLayout({
   children,
@@ -117,6 +119,9 @@ export default function RootLayout({
                     </div>
                   </div>
                 </div>
+              </div>
+              <div className="mt-10">
+                <Navbar menuItems={menuItems} />
               </div>
               {children}
             </main>

@@ -7,7 +7,9 @@ const ListItemIcon = ({
   iconClassName,
 }: ListItemIconProps) => {
   return (
-    <div className={`flex items-center gap-2 ${className}`}>
+    <div
+      className={`flex items-center gap-2 text-muted-foreground ${className}`}
+    >
       <span className={iconClassName} />
       {children}
     </div>

@@ -5,7 +5,7 @@ import NextLink, { LinkProps as NextLinkProps } from 'next/link';
 interface LinkProps extends NextLinkProps {
   // Add any additional props or customizations here
   children: React.ReactElement | string;
-  target: string;
+  target?: string;
 }
 
 export const Link: React.FC<LinkProps> = ({
