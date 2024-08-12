@@ -90,7 +90,7 @@ export default function RootLayout({
                     <p className="my-1">
                       Fullstack Developer. Trainer. Human. Love sharing
                       knowledge <br />
-                      Actually developer trainer at{' '}
+                      Currently developer trainer at{' '}
                       <Link href="https://www.kadea.academy/" target="_blank">
                         kadea academy
                       </Link>
@@ -120,7 +120,7 @@ export default function RootLayout({
                   </div>
                 </div>
               </div>
-              <div className="mt-10">
+              <div className="my-10">
                 <Navbar menuItems={menuItems} />
               </div>
               {children}

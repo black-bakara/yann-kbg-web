@@ -2,11 +2,11 @@ import type { MenuItemProps } from '@/components/navbar/menu-item';
 export const menuItems: MenuItemProps[] = [
   {
     title: 'Feed',
-    href: '/',
+    href: '/#feed',
   },
   {
     title: 'About',
-    href: '/about',
+    href: '/about/#about',
   },
   {
     title: 'Blog',
