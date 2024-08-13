@@ -1,2 +1,2 @@
-export * from './feed';
-export type * from './type';
+export { Feed } from './feed';
+export * from './type';

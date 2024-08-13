@@ -69,7 +69,7 @@ export default function RootLayout({
                 <div className="mt-3">
                   <TitleH1>
                     <div className="flex">
-                      Chris Mwanya{' '}
+                      Chris Mwanya
                       <LinkIcon
                         href="https://github.com/ChrisMwanya"
                         iconClassName="icon-[bi--github] text-2xl"
@@ -86,6 +86,7 @@ export default function RootLayout({
                       <strong className="font-semibold text-main">
                         passion
                       </strong>
+                      ✨
                     </p>
                     <p className="my-1">
                       Fullstack Developer. Trainer. Human. Love sharing
