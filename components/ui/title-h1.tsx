@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface TitleH1Props {
-  children: React.ReactElement;
+  children: React.ReactElement | string;
   className?: string;
 }
 
