@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '@/components/header/header';
 import Logo from '@/components/logo/logo';
 import { ModeToggle } from '@/components/mode-toggle';
+import NextLink from 'next/link';
 import '@/styles/globals.css';
 import { ThemeProvider } from '@/theme-provider';
 import MyAvatar from '@/public/assets/images/profil.jpg';
@@ -32,11 +33,13 @@ export default function RootLayout({
           <div className="absolute inset-0 bg-background opacity-90" />
           <div className="relative z-0">
             <Header>
-              <Logo
-                color={{ primary: '', secondary: '' }}
-                height="3rem"
-                width="3rem"
-              />
+              <NextLink href="/">
+                <Logo
+                  color={{ primary: '', secondary: '' }}
+                  height="3rem"
+                  width="3rem"
+                />
+              </NextLink>
               <div className="flex items-center gap-3">
                 <LinkIcon
                   href="mailto:cmwanya@gmail.com"
