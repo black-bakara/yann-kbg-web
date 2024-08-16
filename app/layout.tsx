@@ -105,7 +105,10 @@ export default function RootLayout({
                         Available
                       </ListItemIcon>
                       <ListItemIcon iconClassName="icon-[ph--link-bold]">
-                        <Link href="https://www.kadea.academy/" target="_blank">
+                        <Link
+                          href="https://linktr.ee/chrismwanya"
+                          target="_blank"
+                        >
                           /links
                         </Link>
                       </ListItemIcon>

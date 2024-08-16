@@ -1,10 +1,15 @@
 import React from 'react';
+import { DateTime } from 'luxon';
 import { FeedProps } from './type';
 import { Pin, Dot, Heart } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Image from 'next/image';
 
 export const Feed: React.FC<FeedProps> = ({ feed }) => {
+  const dateFormated = DateTime.fromFormat(feed.date, 'yyyy-MM-dd').toFormat(
+    'LLL yyyy',
+  );
+
   return (
     <article className="grid grid-cols-[1fr_10fr] gap-x-2 gap-y-4 rounded-lg px-3 py-6 hover:bg-primary-foreground">
       {feed.isPinned && (
@@ -33,7 +38,7 @@ export const Feed: React.FC<FeedProps> = ({ feed }) => {
             size={'2rem'}
             className="text-muted-foreground"
           />
-          <p className="text-xs text-muted-foreground">{feed.date}</p>
+          <p className="text-xs text-muted-foreground">{dateFormated}</p>
         </div>
         <div className="my-1">
           <strong className="rounded-full bg-muted px-4 py-2 text-center text-sm font-semibold">
