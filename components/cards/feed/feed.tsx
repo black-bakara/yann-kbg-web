@@ -43,14 +43,27 @@ export const Feed: React.FC<FeedProps> = ({ feed }) => {
         <h2 className="mt-8 text-2xl font-bold">{feed.title}</h2>
         <p>{feed.content}</p>
         <div className="my-10 h-full w-full">
-          <Image
-            src={feed.image}
-            width={300}
-            height={500}
-            className="my-1 rounded-xl object-cover"
-            alt={feed.title}
-            layout="responsive"
-          />
+          {feed.video ? (
+            <video
+              controls
+              className="w-full rounded-xl object-cover"
+              poster={feed.posterVideo}
+              muted
+            >
+              <source src={feed.video} type="video/mp4" />
+              <track kind="captions" />
+              Your browser does not support the video tag.
+            </video>
+          ) : (
+            <Image
+              src={feed.image || ''}
+              width={300}
+              height={500}
+              className="my-1 rounded-xl object-cover"
+              alt={feed.title}
+              layout="responsive"
+            />
+          )}
         </div>
       </div>
     </article>

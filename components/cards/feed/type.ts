@@ -8,7 +8,9 @@ export type Feed = {
   link?: string;
   isPinned: boolean;
   date: string;
-  image: string;
+  image?: string;
+  video?: string;
+  posterVideo?: string;
 };
 export type FeedProps = {
   feed: Feed;

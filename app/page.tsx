@@ -26,6 +26,17 @@ const feeds: FeedType[] = [
     date: '2023/12/13',
     image: '/assets/images/resicodi.jpg',
   },
+  {
+    name: 'Chris working out',
+    avatarLink: '/assets/images/profil.jpg',
+    status: 'Outside of work',
+    statusIcon: '🚀',
+    title: '',
+    content: '',
+    isPinned: false,
+    date: '2023/12/13',
+    image: '/assets/images/videoPoster.jpg',
+  },
 ];
 
 const Home = () => {
