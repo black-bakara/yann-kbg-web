@@ -9,7 +9,7 @@ export const menuItems: MenuItemProps[] = [
     href: '/about',
   },
   {
-    title: 'Blog',
+    title: 'My Reads',
     href: '/blog',
   },
   {
