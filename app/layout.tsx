@@ -15,6 +15,7 @@ import LinkIcon from '@/components/icon-link/link-icon';
 import Stacks from '@/components/stacks/stacks';
 import { Navbar } from '@/components/navbar/navbar';
 import { menuItems } from '@/config/menu';
+import Footer from '@/components/footer/footer';
 
 export default function RootLayout({
   children,
@@ -48,7 +49,7 @@ export default function RootLayout({
                 <ModeToggle />
               </div>
             </Header>
-            <main className="container lg:px-96">
+            <div className="container lg:px-96">
               <div>
                 <div className="min-sm:h-20 size-full h-48 bg-[url('/assets/images/fordT.jpg')] bg-cover bg-center bg-no-repeat max-md:h-20" />
                 <div className="flex justify-between p-5 max-sm:px-0">
@@ -125,7 +126,8 @@ export default function RootLayout({
                 <Navbar menuItems={menuItems} />
               </div>
               {children}
-            </main>
+              <Footer />
+            </div>
           </div>
         </body>
       </ThemeProvider>

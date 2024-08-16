@@ -1,5 +1,9 @@
 import React from 'react';
-import { CustomButtonProps, CustomButtonLinkProps } from './type';
+import {
+  CustomButtonProps,
+  CustomButtonLinkProps,
+  IconButtonProps,
+} from './type';
 import { Button } from '../ui/button';
 import Link from 'next/link';
 
@@ -21,6 +25,16 @@ export const CustomButton = ({ children }: CustomButtonProps) => {
   return (
     <Button className="hover:bg-main-50 rounded-3xl border-4 border-main bg-main text-sky-50 hover:border-foreground">
       {children}
+    </Button>
+  );
+};
+
+export const IconButton = ({ children, link }: IconButtonProps) => {
+  return (
+    <Button variant="link" size="icon" className="hover:bg-primary-foreground">
+      <Link href={link} target="_blank">
+        {children}
+      </Link>
     </Button>
   );
 };

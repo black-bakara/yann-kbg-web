@@ -9,3 +9,8 @@ export type CustomButtonLinkProps = {
   href: string;
   target?: string;
 };
+
+export type IconButtonProps = {
+  children: React.ReactNode;
+  link: string;
+};
