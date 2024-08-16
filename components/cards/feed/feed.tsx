@@ -1,6 +1,6 @@
 import React from 'react';
 import { FeedProps } from './type';
-import { Pin, Dot } from 'lucide-react';
+import { Pin, Dot, Heart } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Image from 'next/image';
 
@@ -64,6 +64,9 @@ export const Feed: React.FC<FeedProps> = ({ feed }) => {
               layout="responsive"
             />
           )}
+          <div className="mt-5 flex justify-start text-muted-foreground">
+            <Heart />
+          </div>
         </div>
       </div>
     </article>
