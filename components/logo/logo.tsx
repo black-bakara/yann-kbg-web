@@ -16,7 +16,7 @@ const Logo = ({ color, width, height }: LogoProps) => {
           cy="49.5"
           r="47"
           stroke="currentColor"
-          className={color.secondary}
+          className={color.primary}
           strokeWidth="5"
         />
         <rect
@@ -42,7 +42,7 @@ const Logo = ({ color, width, height }: LogoProps) => {
         />
         <path
           d="M68.5938 72.4844C68.5938 71.6823 68.8594 71.0052 69.3906 70.4531C69.9219 69.8906 70.6615 69.6094 71.6094 69.6094C72.5469 69.6094 73.2812 69.8854 73.8125 70.4375C74.3542 70.9896 74.625 71.6719 74.625 72.4844C74.625 73.2969 74.349 73.974 73.7969 74.5156C73.2552 75.0469 72.526 75.3125 71.6094 75.3125C70.6823 75.3125 69.9479 75.0417 69.4062 74.5C68.8646 73.9583 68.5938 73.2865 68.5938 72.4844Z"
-          fill="green"
+          fill="currentColor"
           className={color.secondary}
         />
         <path

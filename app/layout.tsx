@@ -35,7 +35,7 @@ export default function RootLayout({
             <Header>
               <NextLink href="/">
                 <Logo
-                  color={{ primary: '', secondary: '' }}
+                  color={{ primary: '', secondary: 'text-main' }}
                   height="3rem"
                   width="3rem"
                 />
