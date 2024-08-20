@@ -29,8 +29,8 @@ export default function RootLayout({
         enableSystem
         disableTransitionOnChange
       >
-        <body className="max-sm:bg-40 relative bg-opacity-50 bg-[url('../public/assets/logo-black.svg')] bg-30 bg-fixed bg-right-bottom bg-no-repeat">
-          <div className="absolute inset-0 bg-background opacity-90" />
+        <body className="relative bg-[url('../public/assets/logo-black.svg')] bg-30 bg-fixed bg-[80%_100%] bg-no-repeat dark:bg-[url('../public/assets/logo-white.svg')] max-md:bg-[100%_100%] max-sm:bg-50">
+          <div className="absolute inset-0 bg-background opacity-95" />
           <div className="relative z-0">
             <Header>
               <NextLink href="/">
