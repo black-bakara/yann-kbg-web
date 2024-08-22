@@ -26,6 +26,20 @@ const feeds: FeedType[] = [
     date: '2023-12-13',
     image: '/assets/images/resicodi.jpg',
   },
+
+  {
+    name: "Chris's vibes",
+    avatarLink: '/assets/images/profil.jpg',
+    status: '',
+    statusIcon: '🎶😊',
+    title: '',
+    content: '',
+    isPinned: false,
+    date: '2023-12-13',
+    spotify:
+      'https://open.spotify.com/embed/playlist/3XIHtHwRHEZIl5t2YpeuKu?utm_source=generator',
+    image: '/assets/images/resicodi.jpg',
+  },
   {
     name: 'Chris working out',
     avatarLink: '/assets/images/profil.jpg',

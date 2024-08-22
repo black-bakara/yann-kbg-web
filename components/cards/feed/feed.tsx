@@ -48,17 +48,14 @@ export const Feed: React.FC<FeedProps> = ({ feed }) => {
         <h2 className="mt-8 text-2xl font-bold">{feed.title}</h2>
         <p>{feed.content}</p>
         <div className="my-10 h-full w-full">
-          {feed.video ? (
-            <video
-              controls
-              className="w-full rounded-xl object-cover"
-              poster={feed.posterVideo}
-              muted
-            >
-              <source src={feed.video} type="video/mp4" />
-              <track kind="captions" />
-              Your browser does not support the video tag.
-            </video>
+          {feed.spotify ? (
+            <iframe
+              className="rounded-xl object-cover"
+              src={feed.spotify}
+              width="100%"
+              height="352"
+              title="spotify"
+            ></iframe>
           ) : (
             <Image
               src={feed.image || ''}

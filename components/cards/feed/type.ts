@@ -8,6 +8,7 @@ export type Feed = {
   link?: string;
   isPinned: boolean;
   date: string;
+  spotify?: string;
   image?: string;
   video?: string;
   posterVideo?: string;
