@@ -1,24 +1,24 @@
 import type { MenuItemProps } from '@/components/navbar/menu-item';
 export const menuItems: MenuItemProps[] = [
   {
-    title: 'Feed',
+    title: 'Accueil',
     href: '/',
   },
   {
-    title: 'About',
+    title: 'Réalisations',
     href: '/about',
   },
   // {
   //   title: 'My Reads',
   //   href: '/blog',
   // },
-  {
-    title: 'Projects',
-    href: '/projects',
-  },
+  // {
+  //   title: 'Projects',
+  //   href: '/projects',
+  // },
 
   {
-    title: 'Guestbook',
+    title: 'Contacts',
     href: '/guestbook',
   },
 ];
